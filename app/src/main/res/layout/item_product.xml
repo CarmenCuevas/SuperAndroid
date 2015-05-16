@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginBottom="0.5dp"
+    android:gravity="center_vertical|center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_product"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            fresco:overlayImage="@color/overlay_image"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@drawable/superone"
+            fresco:placeholderImageScaleType="focusCrop"/>
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/space_products"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:maxLines="2"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_character_super"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/space_products"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:textStyle="bold|italic"
+                android:text="@string/text_super"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txt_character_price"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="@dimen/space_products"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:maxLines="2"
+            android:textStyle="bold|italic"
+            android:layout_gravity="bottom"
+            android:text="@string/price"/>
+
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
