@@ -19,16 +19,6 @@
             fresco:actualImageScaleType="focusCrop"
             fresco:placeholderImage="@drawable/superone"
             fresco:placeholderImageScaleType="focusCrop"/>
-
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/img_product1"
-            android:layout_width="52dp"
-            android:layout_height="match_parent"
-            fresco:overlayImage="@color/overlay_image"
-            fresco:actualImageScaleType="focusCrop"
-            fresco:placeholderImage="@drawable/superone"
-            fresco:placeholderImageScaleType="focusCrop"/>
-
     </LinearLayout>
 
 </RelativeLayout>
